@@ -16,8 +16,7 @@ class Circle {
     }
 
     set diameter(diameter){
-        this._diameter = diameter;
-        this.radius = this._diameter / 2;
+        this.radius = diameter / 2;
     }
 
     set circumference(circumference) {
@@ -25,7 +24,6 @@ class Circle {
     }
 
     set area(area){
-        this._area = area;
-        this.radius = Math.sqrt(this._area) / Math.PI;
+        this.radius = Math.sqrt(area) / Math.PI;
     }
 }
